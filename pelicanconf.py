@@ -31,5 +31,3 @@ DEFAULT_PAGINATION = 10
 #RELATIVE_URLS = True
 
 THEME = 'notmyidea_bitstream.io'
-
-MD_EXTENSIONS = ['codehilite','extra']
