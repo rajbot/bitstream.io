@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+DELETE_OUTPUT_DIRECTORY = False
+OUTPUT_PATH = '../rajbot.github.io/'
+
 AUTHOR = u'rajbot'
 SITENAME = u'bitstream.io'
 SITEURL = ''
