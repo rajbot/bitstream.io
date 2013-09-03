@@ -18,12 +18,12 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS =  (('TikiRobot', 'http://tikirobot.net'),
-          ('Internet Archive', 'http://archive.org'),)
+LINKS =  (('raj.blog.archive.org', 'http://raj.blog.archive.org'),
+          ('TikiRobot', 'http://tikirobot.net'),)
 
 # Social widget
-SOCIAL = (('twitter', 'http://twitter.com/rajbot'),
-          ('github', 'http://github.com/rajbot'),)
+SOCIAL = (('github', 'http://github.com/rajbot'),
+          ('twitter', 'http://twitter.com/rajbot'),)
 
 DEFAULT_PAGINATION = 10
 
