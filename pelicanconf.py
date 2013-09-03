@@ -7,7 +7,7 @@ OUTPUT_PATH = '../rajbot.github.io/'
 
 AUTHOR = u'rajbot'
 SITENAME = u'bitstream.io'
-SITEURL = ''
+SITEURL = 'http://bitstream.io'
 
 TIMEZONE = 'Europe/Paris'
 
