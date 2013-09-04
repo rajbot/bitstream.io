@@ -5,7 +5,7 @@ To build the site, you will need to install the following:
 * [Install pelican in a virtualenv](http://pelican.readthedocs.org/en/3.2/getting_started.html#installing-pelican)
 * Clone the source repo: https://github.com/rajbot/bitstream.io
 * Clone the build repo: https://github.com/rajbot/rajbot.github.io
-* Clone the template repo: https://github.com/rajbot/bitstream.io_pelican_theme
+* Clone the theme repo: https://github.com/rajbot/bitstream.io_pelican_theme
 
 Now, you can activate your virtualenv, and then use [pelican-themes](http://pelican.readthedocs.org/en/3.2/pelican-themes.html) to install the theme: `pelican-themes --symlink /path/to/theme`
 
@@ -24,5 +24,7 @@ $ pelican --verbose content/ -s pelicanconf.py #writes files into the build repo
 $ cd ../rajbot.github.io/
 $ git commit . #commit your build changes
 $ git push
+
+#if you made changes to the theme repo, remember to push those as well
 ```
 
