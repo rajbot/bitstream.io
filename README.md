@@ -15,6 +15,7 @@ Now, you can edit and publish the site:
 $ cd ~/dev/bitstream.io
 $ make devserver   #starts a server on localhost:8000 and auto-regenerates content
 $ make html        #useful if content doesn't automatically regenerate
+$ ./develop_server.sh stop #stop the dev server
 
 #after making local changes, you can publish:
 $ git commit . #commit your source changes
@@ -23,5 +24,5 @@ $ pelican --verbose content/ -s pelicanconf.py #writes files into the build repo
 $ cd ../rajbot.github.io/
 $ git commit . #commit your build changes
 $ git push
-
+```
 
