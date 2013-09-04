@@ -32,7 +32,7 @@ Building gphoto on Ubuntu 6.10 (note that default 2.6.17 kernel spinlocks, use c
 
 
 ### linux kernel issues
-The kernel used by default in Ubuntu 7.04 (feisty) contains usb autosuspend code. Unfortunately, the Canon EOS 5D does not wake back up properly, which makes capturing images impossible. [[http://lkml.org/lkml/2007/8/16/330|A patch has been submitted]], but until it is accepted, you will have to compile a kernel with USB autosuspend turned off. **Update**: patch [[http://sourceforge.net/mailarchive/message.php?msg_id=20070822220805.GB30603%40kroah.com|accepted]], should be in 2.6.23 kernel. Instructions on how we compiled the kernel are below.
+The kernel used by default in Ubuntu 7.04 (feisty) contains usb autosuspend code. Unfortunately, the Canon EOS 5D does not wake back up properly, which makes capturing images impossible. [A patch has been submitted](http://lkml.org/lkml/2007/8/16/330), but until it is accepted, you will have to compile a kernel with USB autosuspend turned off. **Update**: patch [accepted](http://sourceforge.net/mailarchive/message.php?msg_id=20070822220805.GB30603%40kroah.com), should be in 2.6.23 kernel. Instructions on how we compiled the kernel are below.
 
 The kernel used by default in Ubuntu 6.10 (edgy) contains a bug that causes a spinlock in the jbd layer. This bug will cause a machine to hang in a completely unresponsive state, although you can use a serial console to see assertions firing in jbd. One workaround is to use a newer version of Ubuntu (7.04) with autosuspend turned off. Another is to use ext2 intead of ext3.
 
