@@ -4,8 +4,8 @@ save_as: index.html
 
 
 archive.org projects                                             |
------------------------------------------------------------------|-----------------------------
-[IA BookReader](http://openlibrary.org/dev/docs/bookreader)      | The IA bookreader allows online viewing of full-resolution archival images of books scanned by the Internet Archive. I rewrote the bookreader in 2007, and Michael Ang, George Oates, and several others provided significant updates and a new design since then. The latest improvements I added were support for [online loans through Open Library](http://openlibrary.org/borrow) and text-to-speech. I continue to maintain this project, but further development has stopped. ([github](https://github.com/openlibrary/bookreader))
+:---------------------------------------------------------------:|-----------------------------
+[BookReader](http://openlibrary.org/dev/docs/bookreader)         | The IA bookreader allows online viewing of full-resolution archival images of books scanned by the Internet Archive. I rewrote the bookreader in 2007, and Michael Ang, George Oates, and several others provided significant updates and a new design since then. The latest improvements I added were support for [online loans through Open Library](http://openlibrary.org/borrow) and text-to-speech. I continue to maintain this project, but further development has stopped. ([github](https://github.com/openlibrary/bookreader))
 [Open Library](http://openlibrary.org/)                          | Open Library is an online catalog of book metadata, striving to be "one webpage for every book ever published". It was started by Aaron Swartz and is now maintained by Anand Chitipothu. I served as Tech Lead of Open Library for a while. Further developement on OL has stopped. ([github](https://github.com/internetarchive/openlibrary))
 [autocrop](https://github.com/rajbot/autocrop)                   | C code that automatically crops book images, used in the IA scanning centers. It was originally written as a side project, and I could use help improving the algorithm. ([github](https://github.com/rajbot/autocrop)).
 [Wayback Machine](http://archive.org/web/web.php)                | I've worked on a [Python SURT module](https://github.com/rajbot/surt), a [CDX Writer](https://github.com/rajbot/CDX-Writer), the [liveweb proxy](https://github.com/internetarchive/liveweb) and a [S3 uploader daemon](https://github.com/internetarchive/s3_loader).
@@ -16,7 +16,7 @@ Open Source IA Projects                                          | There are man
 
 
 Personal Projects                                                                     |
---------------------------------------------------------------------------------------|----------------------------------
+:------------------------------------------------------------------------------------:|----------------------------------
 [![TikiCal](http://tikical.com/static/tikical.com.header.png)](http://tikical.com)    | [TikiCal](http://tikical.com) is a social event calendar, based off the open source Reddit code, in python. ([github](https://github.com/rajbot/tikical))
 ![Shapeoko](/static/images/shapeoko.jpg)                                              | CNC gcode and shape files for wooden toys. ([github](https://github.com/rajbot/bernaltoys))
 [B&#9837; Buddha Machine](http://tikirobot.net/BbBuddha/)                             | A javascript Buddha Machine based on the magical "[In B flat](http://inbflat.net)" project. (Flash needs to be enabled for the YouTube API.) ([github](https://github.com/rajbot/Bb-Buddha-Machine))
@@ -25,3 +25,4 @@ Personal Projects                                                               
 [Search-By-Image Wrapper](https://github.com/rajbot/Search-By-Image)                  | Tool to create movies using Sebastian Schmieg's [Search By Image, Recursively](http://sebastianschmieg.com/searchbyimage) project. [Example Movies](http://www.tikirobot.net/wp/2012/01/17/from-mlk-to-the-hubble-deep-field/). ([github](https://github.com/rajbot/Search-By-Image))
 
 
+<a href="https://github.com/rajbot"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
