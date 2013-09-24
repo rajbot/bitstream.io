@@ -3,8 +3,8 @@ URL:
 save_as: index.html
 
 
-archive.org projects                                             |
-:---------------------------------------------------------------:|-----------------------------
+archive.org projects                                             | ![BookReader](/static/images/bookreader.jpg) ![OL](/static/images/ol.png) ![autocrop](/static/images/autocrop.jpg) ![wayback](/static/images/wayback_logo-sm.gif) ![IA](/static/images/glogo.png)
+:---------------------------------------------------------------:|---------------------------------------------
 [BookReader](http://openlibrary.org/dev/docs/bookreader)         | The IA bookreader allows online viewing of full-resolution archival images of books scanned by the Internet Archive. I rewrote the bookreader in 2007, and Michael Ang, George Oates, and several others provided significant updates and a new design since then. The latest improvements I added were support for [online loans through Open Library](http://openlibrary.org/borrow) and text-to-speech. I continue to maintain this project, but further development has stopped. ([github](https://github.com/openlibrary/bookreader))
 [Open Library](http://openlibrary.org/)                          | Open Library is an online catalog of book metadata, striving to be "one webpage for every book ever published". It was started by Aaron Swartz and is now maintained by Anand Chitipothu. I served as Tech Lead of Open Library for a while. Further developement on OL has stopped. ([github](https://github.com/internetarchive/openlibrary))
 [autocrop](https://github.com/rajbot/autocrop)                   | C code that automatically crops book images, used in the IA scanning centers. It was originally written as a side project, and I could use help improving the algorithm. ([github](https://github.com/rajbot/autocrop)).
