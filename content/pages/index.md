@@ -5,7 +5,7 @@ save_as: index.html
 
 Video projects                                                   | ![QuickTime](/static/images/quicktime.png) ![KickTam](/static/images/kicktam.gif) ![iChat](/static/images/ichat.png) ![TouchEdit](/static/images/touchedit.png)
 :---------------------------------------------------------------:|---------------------------------------------
-Video Compression                                                | I have been working with video compression algorithms since 1996. Most notably, I worked on Apple's H.264 codec, and represented Apple at the ISO and ITU standards committees for MPEG and H.264. My focus is on algorithm research and SIMD optimization. I am currently working on a series of technical articles on H.265.
+Video Compression                                                | I have been working on video compression algorithms since 1996. Most notably, I worked on Apple's H.264 codec, and represented Apple at the ISO and ITU standards committees for MPEG-4 and H.264. My focus is on algorithm research and SIMD optimization. I am currently working on a series of technical articles on H.265.
 iOS Development                                                  | I enjoy working on multimedia applications for the iPad using Cocoa and AVFoundation.
 QuickTime                                                        | I worked on QuickTime 5, 6, and 7, mostly on the H.264 and MPEG-4 components.
 Video Conferencing                                               | I worked on 4-way video conferencing for Apple's iChat AV product.
