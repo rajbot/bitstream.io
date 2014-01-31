@@ -3,6 +3,18 @@ URL:
 save_as: index.html
 
 
+Video projects                                                   | ![QuickTime](/static/images/quicktime.png) ![KickTam](/static/images/kicktam.gif) ![iChat](/static/images/ichat.png) ![TouchEdit](/static/images/touchedit.png)
+:---------------------------------------------------------------:|---------------------------------------------
+Video Compression                                                | I have been working with video compression algorithms since 1996. Most notably, I worked on Apple's H.264 codec, and represented Apple at the ISO and ITU standards committees for MPEG and H.264. My focus is on algorithm research and SIMD optimization. I am currently working on a series of technical articles on H.265.
+iOS Development                                                  | I enjoy working on multimedia applications for the iPad using Cocoa and AVFoundation.
+QuickTime                                                        | I worked on QuickTime 5, 6, and 7, mostly on the H.264 and MPEG-4 components.
+Video Conferencing                                               | I worked on 4-way video conferencing for Apple's iChat AV product.
+Research                                                         | I have a MSEE from CMU, focusing on statistical signal processing, video compression, and medical imaging.
+
+
+&nbsp;
+
+
 archive.org projects                                             | ![BookReader](/static/images/bookreader.jpg) ![OL](/static/images/ol.png) ![autocrop](/static/images/autocrop.jpg) ![wayback](/static/images/wayback_logo-sm.gif) ![IA](/static/images/glogo.png)
 :---------------------------------------------------------------:|---------------------------------------------
 [BookReader](http://openlibrary.org/dev/docs/bookreader)         | The IA bookreader allows online viewing of full-resolution archival images of books scanned by the Internet Archive. I rewrote the bookreader in 2007, and Michael Ang, George Oates, and several others provided significant updates and a new design since then. The latest improvements I added were support for [online loans through Open Library](http://openlibrary.org/borrow) and text-to-speech. I continue to maintain this project, but further development has stopped. ([github](https://github.com/openlibrary/bookreader))
@@ -11,7 +23,8 @@ archive.org projects                                             | ![BookReader]
 [autocrop](https://github.com/rajbot/autocrop)                   | C code that automatically crops book images, used in the IA scanning centers. It was originally written as a side project, and I could use help improving the algorithm. ([github](https://github.com/rajbot/autocrop)).
 [gPhoto camera drivers](http://www.gphoto.org)                   | I got to work with Paul Walmsley when he added gphoto support and [a linux kernel patch](https://lkml.org/lkml/2007/8/16/330) for the Canon 5D camera, used in the IA scanning centers. [Here are our notes](/tag/gphoto.html) from reverse-engineering Canon drivers.
 [IA Python Library](https://github.com/jjjake/ia-wrapper)        | Jake Johnson has written a great python and command-line interface to IA storage. I've been contributing improvements, and find this project quite useful. ([github](https://github.com/jjjake/ia-wrapper))
-[IA HTML5 Uploader](http://archive.org/upload/)                  | I am currently working on the IA HTML5 Uploader, which was originally developed by Michael Ang. Although it is part of the archive.org codebase and not available on github, the javascript for the uploader is [available here](http://archive.org/upload/app/js/ia_uploader.js).
+[IA HTML5 Uploader](http://archive.org/upload/)                  | I am currently working on the IA HTML5 Uploader, which was originally developed by Michael Ang.
+Book Digitization Software                                       | I wrote IA's server-based digitization tool called RePublisher, which is used by the Scribe bookscanners.
 Open Source IA Projects                                          | There are many other projects available on the [Internet Archive github organization page](https://github.com/internetarchive/).
 
 
