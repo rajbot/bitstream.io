@@ -22,11 +22,14 @@ DEFAULT_DATE = 'fs'
 
 # Blogroll
 LINKS =  (('raj.blog.archive.org', 'http://raj.blog.archive.org'),
-          ('TikiRobot', 'http://tikirobot.net'),)
+          ('TikiRobot', 'http://tikirobot.net'),
+         )
 
 # Social widget
 SOCIAL = (('github', 'http://github.com/rajbot'),
-          ('twitter', 'http://twitter.com/rajbot'),)
+          ('twitter', 'http://twitter.com/rajbot'),
+          ('email', 'mailto:raj@bitstreamFIXME.eyeoh'),
+         )
 
 DEFAULT_PAGINATION = 10
 
