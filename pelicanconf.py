@@ -9,7 +9,7 @@ AUTHOR = u'rajbot'
 SITENAME = u'bitstream.io'
 SITEURL = ''
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = u'en'
 
