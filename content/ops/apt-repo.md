@@ -9,10 +9,10 @@ packages to end users. You will want to create a signed repository, so
 that users can perform automated updates of your software (e.g. using
 `apt-get install -y`).
 
-There are two kinds of repositories, "official" and "trivial". Trivial
-repositories are easier to set up than the official variety, but setup
-of signed trivial repositories is not well-documented. Here are
-instructions on how to set up your own repo:
+There are [two kinds of repositories](https://wiki.debian.org/HowToSetupADebianRepository#APT_Archive_Types),
+"official" and "trivial". Trivial repositories are easier to set up than
+the official variety, but setup of *signed* trivial repositories is not
+well-documented. Here are instructions on how to set up your own repo:
 
 
 Prerequisites:
