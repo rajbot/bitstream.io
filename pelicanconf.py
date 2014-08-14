@@ -23,6 +23,7 @@ DEFAULT_DATE = 'fs'
 # Blogroll
 LINKS =  (('raj.blog.archive.org', 'http://raj.blog.archive.org'),
           ('TikiRobot', 'http://tikirobot.net'),
+          ('Archives', '/archives.html'),
          )
 
 # Social widget
