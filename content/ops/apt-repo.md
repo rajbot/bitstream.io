@@ -25,47 +25,42 @@ Prerequisites:
 The repository is a simply a directory hierarchy. It can be local (e.g. on a usb stick) or
 published to a web server. Here is what it should look like when we are done:
 
-    - aptrepo/
-        - binary/
-            - Packages.gz
-            - foo.deb
+    - apt-repo/
+        - foo.deb
+        - Packages
         - Release
         - Release.gpg
 
 
 Start by creating the hierarchy above with empty directories. Place `foo.deb` in the
-`binary` directory, and then follow these instructions to create the signed files:
+`apt-repo` directory, and then follow these instructions to create the signed files:
 
 ```bash
 #sign the .deb file
-cd ~/aptrepo/binary
+cd apt-repo
 dpkg-sig --sign builder foo.deb
+cd ..
 
 #create the Packages.gz file
-cd ~/aptrepo
-apt-ftparchive packages binary | gzip -9c > binary/Packages.gz
+cd apt-repo
+apt-ftparchive packages . > Packages
+cd ..
 
 #create the Release file
-cd ~/aptrepo
-apt-ftparchive release . > Release
+apt-ftparchive release apt-repo > apt-repo/Release
 
 #create a detached ascii signature of the Release file
-gpg --armor --sign --detach-sign Release.gpg Release
+gpg --armor --sign --detach-sign apt-repo/Release.gpg apt-repo/Release
 ```
 
-Now you can upload the `aptrepo` directory to a webserver. If the repo
-path is `http://example.com/foo/aptrepo`, then end users will have to
-add this line to their  `/etc/apt/sources.list`:
+Now you can upload the `apt-repo` directory to a webserver. If the repo
+path is `http://example.com/foo/apt-repo`, then end users will have to
+add a file named `my-repo.list` to the `/etc/apt/sources.list.d` directory
+that contains this line:
 
 ```bash
-deb http://example.com/foo/aptrepo binary/
+deb http://example.com/foo/apt-repo /
 ```
-
-Note that the `add-apt-repository` tool makes it easy for end users to
-add repos to `sources.list`, but older versions of this tool contain a
-bug ([now fixed](https://bugs.launchpad.net/ubuntu/+source/software-properties/+bug/987264))
-that adds a `deb-src` line in addition to the `deb` line, which will
-cause `apt-get update` to fail.
 
 
 You now need to distribute your public key to end users, who will need to add it to their
