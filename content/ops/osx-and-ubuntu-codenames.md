@@ -3,11 +3,8 @@ Author: raj
 Tags:   osx, ubuntu
 Date:   2014-08-13
 
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <style type="text/css">
-    tbody td {border: 0; font-size: 75%;}
+    tbody td {font-size: 75%;}
 </style>
 
 <div class="row">
