@@ -9,13 +9,8 @@ mobile apps that can be distributed on Linux, OS X, Windows, iOS, and Android. P
 Kivy apps on Linux is not well-supported. Here is how to get it to work:
 
 
-## 1. Install Kivy using `pip`, and not from the provided PPA or `.deb`
 
-We are going to use PyInstaller to create a linux executable. Kivy provides PyInstaller
-hooks in the `kivy.tools` package, but PPA does not include `kivy.tools`
-
-
-## 2. Use a Vagrantfile to bootstrap a development environment
+## 1. Use a Vagrantfile to bootstrap a development environment
 
 There are a lot of dependencies for kivy development, and a lot of different ways to
 install them. In order to help you get started, I made a Vagrantfile to set up a
@@ -27,6 +22,23 @@ that works like a regular linux desktop app.
 
 The Vagrantfile and instructions on how to use it are here:
 [https://github.com/rajbot/kivy_pyinstaller_linux_example](https://github.com/rajbot/kivy_pyinstaller_linux_example)
+
+
+<br/>
+
+
+## 2. Install Kivy using `pip`, and not from the provided PPA
+
+If you don't use the Vagrantfile above and want to install Kivy yourself, do not
+install it using the PPA. This is because we are going to use PyInstaller to
+create a linux executable, and we will need the PyInstaller hooks from the `kivy.tools`
+package, but the PPA does not include `kivy.tools`.
+
+This [bash script](https://github.com/rajbot/kivy_pyinstaller_linux_example/blob/master/bootstrap.sh)
+will show you how to install Kivy in a virtualenv so that you can use the PyInstaller hooks.
+
+
+<br/>
 
 
 ## 3. Strip system libraries from the pyinstaller executable to ensure your app is relocatable
@@ -117,11 +129,74 @@ exe = EXE(pyz,
 ```
 
 
-## 4. Set up a signed trivial APT repository to distribute your `.deb`
+<br/>
 
-Once you make an executable, you can give it a nice icon and `.desktop` file
-and package it in a `.deb` for distribution. Steps to create the `.deb` can be
-found in the `bootstrap.sh` file, run by the Vagrantfile in step #2 above.
+
+## 4. Package your executable in a `.deb` file
+
+Once you make an executable, you can give it a nice icon and Ubuntu `.desktop`
+file and package it in a `.deb` for distribution. Steps to create the `.deb` can
+be found in [bootstrap.sh](https://github.com/rajbot/kivy_pyinstaller_linux_example/blob/master/bootstrap.sh),
+from step #1 above. At minimum, your `.deb` package should:
+
+- Install your application in a binary directory, such as `/usr/local/bin/my-app`
+- Install an icon in `/usr/share/pixmaps/my-app.png`
+- Install a `.desktop` file in `/usr/share/applications/my-app.desktop`
+
+Debian version numbers are in the form {major}.{minor}-{patchlevel}. To make the `.deb`,
+first create the directory structure below:
+
+    - my-app_1.0-1
+        - DEBIAN
+            - control
+        - usr
+            - local
+                - bin
+                    - my-app
+            - share
+                - applications
+                    - my-app.desktop
+                - pixmaps
+                    - my-app.png
+
+Now you can package your app by typing `dpkg-deb --build myapp_1.0-0`. You can then
+install the resulting package by typing `sudo dpkg -i myapp_1.0-0.deb`.
+
+The `DEBIAN/control` file should look like this:
+
+    Source: my-app
+    Priority: extra
+    Maintainer: raj <raj@unknown>
+    Build-Depends: debhelper (>= 8.0.0)
+    Standards-Version: 3.9.2
+    Package: my-app
+    Version: 1.0-0
+    Architecture: i386
+    Description: Should description
+     Long description string (starts with a whitespace)
+
+To give your executable a first-class Ubuntu application, you will need to create a
+`.desktop` file, which will tell Ubuntu about its icon, version, and name. `my-app.desktop`
+should look like this:
+
+    [Desktop Entry]
+    Version=1.0
+    Name=My Application
+    Comment=Example App
+    Exec=/usr/local/bin/my-app
+    Icon=my-app
+    Type=Application
+    Categories=Utility;Application;
+
+Note that `Version` above refers to the version of the `.desktop` format (and
+not the version of the app), and should always be "1.0". The `Icon` entry does
+not need a full path or extension. Ubuntu will look for your icon in
+`/usr/share/pixmaps`.
+
+<br/>
+
+
+## 5. Set up a signed trivial APT repository to distribute your `.deb`
 
 To distribute your `.deb` file to end users, you will want to set up an APT
 repository, which must be signed with a GPG key if you want to allow for
