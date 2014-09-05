@@ -3,6 +3,7 @@ This repository contains [Pelican](http://pelican.readthedocs.org/en/3.2/) sourc
 To build the site, you will need to install the following:
 
 * [Install pelican in a virtualenv](http://pelican.readthedocs.org/en/3.2/getting_started.html#installing-pelican)
+* Install `markdown` in the virtualenv
 * Clone the source repo: https://github.com/rajbot/bitstream.io
 * Clone the build repo: https://github.com/rajbot/rajbot.github.io
 * Clone the theme repo: https://github.com/rajbot/bitstream.io_pelican_theme
