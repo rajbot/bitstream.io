@@ -71,7 +71,7 @@ Date:   2014-09-04
 - [soundcloud/roshi · GitHub](https://github.com/soundcloud/roshi)
 - [Sacred games (Open Library)](https://openlibrary.org/works/OL1051312W/Sacred_games)
 - [Python 3 Patterns, Recipes and Idioms — Python 3 Patterns, Recipes and Idioms](http://python-3-patterns-idioms-test.readthedocs.org/en/latest/)
-- [Ring Box Edited - Imgur](https://imgur.com/a/3Mu8J)
+- <span class='embed_button'>&#9654; &#10133;</span> [Ring Box Edited - Imgur](https://imgur.com/a/3Mu8J)
 - [San Francisco Real Estate Market Overview | Home Value & Price Trends](http://www.paragon-re.com/Market_overview/)
 - [What your 1st-grade life says about the rest of it - The Washington Post](http://www.washingtonpost.com/blogs/wonkblog/wp/2014/08/29/what-your-1st-grade-life-says-about-the-rest-of-it)
 - [Colour is a Python colour science package implementing a comprehensive number of colour theory transformations and algorithms.](http://colour-science.org/)
