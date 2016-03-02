@@ -74,14 +74,12 @@ client.register_task_definition(
 
 # Create ECS Service
 
-service = {
-    desiredCount: N,    #replace with number of EC2 nodes in your cluster
-    'cluster': 'my-cluster-name',
-    'serviceName': 'logspout-service',
-    'taskDefinition': 'my-task-def'
-}
-
-self.client.create_service(**service)
+client.create_service(
+    desiredCount = N, #replace with number of EC2 nodes in your cluster
+    cluster = 'my-cluster-name',
+    serviceName = 'logspout-service',
+    taskDefinition = 'my-task-def'
+)
 ```
 
 After ECS launches the logspout containers, your docker logs will start appearing in Papertrail.
