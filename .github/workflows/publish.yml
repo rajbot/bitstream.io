@@ -1,0 +1,26 @@
+name: Publish Pelican Blog
+on: [push]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v2
+        with:
+          repository: rajbot/bitstream.io
+          path: bitstream.io
+      - name: Checkout build repo
+        uses: actions/checkout@v2
+        with:
+          repository: rajbot/rajbot.github.io
+          path: rajbot.github.io
+      - name: Checkout theme repo
+        uses: actions/checkout@v2
+        with:
+          repository: rajbot/bitstream.io_pelican_theme
+          path: bitstream.io_pelican_theme
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "This job's status is ${{ job.status }}."
+

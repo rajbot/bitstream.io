@@ -37,4 +37,4 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME = 'notmyidea_bitstream.io'
+THEME = 'bitstream.io_pelican_theme'
