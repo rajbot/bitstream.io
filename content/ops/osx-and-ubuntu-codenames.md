@@ -9,36 +9,50 @@ Date:   2014-08-13
 
 <div class="row">
 <div class="col-md-6">
-    Ubuntu
+    <h2>Ubuntu</h2>
     <table class="table-striped">
     <tbody>
-        <tr><td>Ubuntu 4.10</td><td>Warty Warthog</td></tr>
-        <tr><td>Ubuntu 5.04</td><td>Hoary Hedgehog</td></tr>
-        <tr><td>Ubuntu 5.10</td><td>Breezy Badger</td></tr>
-        <tr><td>Ubuntu 6.06 LTS</td><td>Dapper Drake</td></tr>
-        <tr><td>Ubuntu 6.10</td><td>Edgy Eft</td></tr>
-        <tr><td>Ubuntu 7.04</td><td>Feisty Fawn</td></tr>
-        <tr><td>Ubuntu 7.10</td><td>Gutsy Gibbon</td></tr>
-        <tr><td>Ubuntu 8.04 LTS</td><td>Hardy Heron</td></tr>
-        <tr><td>Ubuntu 8.10</td><td>Intrepid Ibex</td></tr>
-        <tr><td>Ubuntu 9.04</td><td>Jaunty Jackalope</td></tr>
-        <tr><td>Ubuntu 9.10</td><td>Karmic Koala</td></tr>
-        <tr><td>Ubuntu 10.04 LTS</td><td>Lucid Lynx</td></tr>
-        <tr><td>Ubuntu 10.10</td><td>Maverick Meerkat</td></tr>
-        <tr><td>Ubuntu 11.04</td><td>Natty Narwhal</td></tr>
-        <tr><td>Ubuntu 11.10</td><td>Oneiric Ocelot</td></tr>
-        <tr><td>Ubuntu 12.04 LTS</td><td>Precise Pangolin</td></tr>
-        <tr><td>Ubuntu 12.10</td><td>Quantal Quetzal</td></tr>
-        <tr><td>Ubuntu 13.04</td><td>Raring Ringtail</td></tr>
-        <tr><td>Ubuntu 13.10</td><td>Saucy Salamander</td></tr>
-        <tr><td>Ubuntu 14.04 LTS</td><td>Trusty Tahr</td></tr>
+        <tr><td>Ubuntu 21.10</td><td>Impish Indri</td></tr>
+        <tr><td>Ubuntu 21.04</td><td>Hirsute Hippo</td></tr>
+        <tr><td>Ubuntu 20.10</td><td>Groovy Gorilla</td></tr>
+        <tr><td>Ubuntu 20.04 LTS</td><td>Focal Fossa</td></tr>
+        <tr><td>Ubuntu 19.10</td><td>Eoan Ermine</td></tr>
+        <tr><td>Ubuntu 19.04</td><td>Disco Dingo</td></tr>
+        <tr><td>Ubuntu 18.10</td><td>Cosmic Cuttlefish</td></tr>
+        <tr><td>Ubuntu 18.04 LTS</td><td>Bionic Beaver</td></tr>
+        <tr><td>Ubuntu 17.10</td><td>Artful Aardvark</td></tr>
+        <tr><td>Ubuntu 17.04</td><td>Zesty Zapus</td></tr>
+        <tr><td>Ubuntu 16.10</td><td>Yakkety Yak</td></tr>
+        <tr><td>Ubuntu 16.04 LTS</td><td>Xenial Xerus</td></tr>
+        <tr><td>Ubuntu 15.10</td><td>Wily Werewolf</td></tr>
+        <tr><td>Ubuntu 15.04</td><td>Vivid Vervet</td></tr>
         <tr><td>Ubuntu 14.10</td><td>Utopic Unicorn</td></tr>
-    </tbody>
+        <tr><td>Ubuntu 14.04 LTS</td><td>Trusty Tahr</td></tr>
+        <tr><td>Ubuntu 13.10</td><td>Saucy Salamander</td></tr>
+        <tr><td>Ubuntu 13.04</td><td>Raring Ringtail</td></tr>
+        <tr><td>Ubuntu 12.10</td><td>Quantal Quetzal</td></tr>
+        <tr><td>Ubuntu 12.04 LTS</td><td>Precise Pangolin</td></tr>
+        <tr><td>Ubuntu 11.10</td><td>Oneiric Ocelot</td></tr>
+        <tr><td>Ubuntu 11.04</td><td>Natty Narwhal</td></tr>
+        <tr><td>Ubuntu 10.10</td><td>Maverick Meerkat</td></tr>
+        <tr><td>Ubuntu 10.04 LTS</td><td>Lucid Lynx</td></tr>
+        <tr><td>Ubuntu 9.10</td><td>Karmic Koala</td></tr>
+        <tr><td>Ubuntu 9.04</td><td>Jaunty Jackalope</td></tr>
+        <tr><td>Ubuntu 8.10</td><td>Intrepid Ibex</td></tr>
+        <tr><td>Ubuntu 8.04 LTS</td><td>Hardy Heron</td></tr>
+        <tr><td>Ubuntu 7.10</td><td>Gutsy Gibbon</td></tr>
+        <tr><td>Ubuntu 7.04</td><td>Feisty Fawn</td></tr>
+        <tr><td>Ubuntu 6.10</td><td>Edgy Eft</td></tr>
+        <tr><td>Ubuntu 6.06 LTS</td><td>Dapper Drake</td></tr>
+        <tr><td>Ubuntu 5.10</td><td>Breezy Badger</td></tr>        
+        <tr><td>Ubuntu 5.04</td><td>Hoary Hedgehog</td></tr>
+        <tr><td>Ubuntu 4.10</td><td>Warty Warthog</td></tr>
     </table>
     Ubuntu version numbers are also release dates: Ubuntu 14.04 was released in April 2014.
 </div>
+<div>&nbsp;</div>
 <div class="col-md-6">
-    OSX
+    <h2>OSX</h2>
     <table class="table-striped">
     <tbody>
         <tr><td>OS X 10.0</td><td>Cheetah</td><td>March 24, 2001</td></tr>
